@@ -7,7 +7,7 @@ face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 types = ('*.jpg', '*.png')
 image_path_list= []
 for files in types:
-    image_path_list.extend(glob(os.path.join("/content/PRNet/raw_images/"), files)))
+    image_path_list.extend(glob(os.path.join("/content/PRNet/raw_images/"), files))
 total_num = len(image_path_list)
 
 for i, image_path in enumerate(image_path_list):
